@@ -21,3 +21,21 @@ export const slideItems = [
         bg: "dbd6fe45"
     }
 ]
+
+export const categories = [
+    {
+        id: 1,
+        img: 'c1',
+        title: 'Prints'
+    },
+    {
+        id: 2,
+        img: 'c2',
+        title: 'Spirals'
+    },
+    {
+        id: 3,
+        img: 'c3',
+        title: 'Water Colors'
+    }
+]
