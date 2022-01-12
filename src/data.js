@@ -25,12 +25,12 @@ export const slideItems = [
 export const categories = [
     {
         id: 1,
-        img: 'c1',
+        img: 'c2',
         title: 'Prints'
     },
     {
         id: 2,
-        img: 'c2',
+        img: 'c1',
         title: 'Spirals'
     },
     {
@@ -38,4 +38,15 @@ export const categories = [
         img: 'c3',
         title: 'Water Colors'
     }
+]
+
+export const popularProducts = [
+    {id: 1, img: 'p1'},
+    {id: 2, img: 'p2'},
+    {id: 3, img: 'p3'},
+    {id: 4, img: 'p4'},
+    {id: 5, img: 'p5'},
+    {id: 6, img: 'p6'},
+    {id: 7, img: 'p7'},
+    {id: 8, img: 'p8'}
 ]
