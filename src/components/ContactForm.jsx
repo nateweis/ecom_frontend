@@ -1,4 +1,4 @@
-import { Send } from "@material-ui/icons"
+import { Email } from "@material-ui/icons"
 import styled from "styled-components"
 
 const ContactForm = () => {
@@ -6,10 +6,7 @@ const ContactForm = () => {
         <Container>
             <Title>Contact Me</Title>
             <Desc>Need a custom piece? Send me a message!  </Desc>
-            <InputContainer>
-                <Input placeholder="Your Email" />
-                <Button> <Send /> </Button>
-            </InputContainer>
+            <Button> <Email /> </Button>
         </Container>
     )
 }
@@ -32,24 +29,15 @@ const Desc = styled.div`
     font-weight: 300;
     margin-bottom: 20px;
 `
-const InputContainer = styled.div` 
-    width: 50%;
-    height: 40px;
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid lightgray;
-`
-const Input = styled.input` 
-    border: none;
-    flex: 8;
-    padding-left: 20px;
-`
+
 const Button = styled.button` 
-    flex: 2;
+    width: 60px;
+    height: 40px;
     border: none;
+    border-radius: 10px;
     background-color: teal;
     color: white;
+    cursor: pointer;
 `
 
 export default ContactForm
