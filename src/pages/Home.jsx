@@ -5,6 +5,7 @@ import Slider from '../components/Slider'
 import Categories from '../components/Categories'
 import Products from '../components/Products'
 import ContactForm from '../components/ContactForm'
+import Footer from '../components/Footer'
 
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
             <Categories />
             <Products />
             <ContactForm />
+            <Footer />
         </div>
     )
 }
