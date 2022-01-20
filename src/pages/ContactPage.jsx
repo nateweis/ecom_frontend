@@ -16,8 +16,7 @@ const ContactPage = () => {
                     <Input placeholder="name" />
                     <Input placeholder="last name" />
                     <Input placeholder="phone" />
-                    <Input placeholder="email" />
-                    
+                    <Input placeholder="email" />                   
                     <Textarea placeholder="message" />
                     <Button>SEND</Button>                
                 </Form>

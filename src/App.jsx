@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Cart from './pages/Cart';
 import ContactPage from './pages/ContactPage';
 import Home from './pages/Home'
 import Login from './pages/Login';
@@ -10,7 +11,7 @@ import Register from './pages/Register';
 const App = () => {
   return (
     <>
-      <ContactPage />
+      <Cart />
     </>
   );
 };
