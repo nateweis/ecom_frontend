@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Pic from '../images/imgFiles';
+import { mobile } from "../responsive";
 
 const CategoryItem = (props) => {
     return (
@@ -24,6 +25,7 @@ const Img = styled.img`
     width: 100%;
     height: 100%;
     object-fit: cover;
+    ${mobile({height: "28vh"})}
 `
 const Info = styled.div` 
     position: absolute;

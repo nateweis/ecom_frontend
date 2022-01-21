@@ -1,5 +1,6 @@
 import { Email } from "@material-ui/icons"
 import styled from "styled-components"
+import { mobile } from "../responsive"
 
 const ContactForm = () => {
     return (
@@ -19,15 +20,18 @@ const Container = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    ${mobile({height: "50vh"})}
 `
 const Title = styled.h1` 
     font-size: 70px;
     margin-bottom: 20px;
+    ${mobile({fontSize: "50px"})}
 `
 const Desc = styled.div` 
     font-size: 24px;
     font-weight: 300;
     margin-bottom: 20px;
+    ${mobile({textAlign: "center", fontSize: "18px"})}
 `
 
 const Button = styled.button` 
