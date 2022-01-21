@@ -2,6 +2,7 @@ import styled from "styled-components"
 import Announcement from "../components/Announcement"
 import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
+import { mobile } from "../responsive"
 
 
 const ContactPage = () => {
@@ -37,7 +38,8 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: auto;
+    margin: 30px auto;
+    ${mobile({width: "75%"})}
 `
 const Title = styled.h1`
     font-size: 24px;
@@ -50,13 +52,13 @@ const Form = styled.form`
 const Input = styled.input`
     flex: 1;
     min-width: 40% ;
-    margin: 20px 10px 0 0;
+    margin: 20px 10px 0 1px;
     padding: 10px;
 `
 const Textarea = styled.textarea`
     width: 99% ;
     min-height: 70px;
-    margin: 10px 0;
+    margin: 10px 1px;
     padding: 10px;
 `
 const Button = styled.button`
