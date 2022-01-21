@@ -1,8 +1,9 @@
-import { ArrowLeftOutlined, ArrowRightOutlined } from "@material-ui/icons"
-import { useState } from "react"
-import styled from "styled-components"
-import {slideItems} from '../data'
-import Pic from '../images/imgFiles'
+import { ArrowLeftOutlined, ArrowRightOutlined } from "@material-ui/icons";
+import { useState } from "react";
+import styled from "styled-components";
+import {mobile} from '../responsive';
+import {slideItems} from '../data';
+import Pic from '../images/imgFiles';
 
 const Slider = () => {
     const [sliderIndex, setSliderIndex] = useState(0)
@@ -47,6 +48,7 @@ const Container = styled.div`
     display: flex;
     position: relative;
     overflow: hidden;
+    
 `
 const Arrow = styled.div`
     width: 50px;
