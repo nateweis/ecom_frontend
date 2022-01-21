@@ -6,6 +6,7 @@ import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
 
 import Pic from '../images/imgFiles'
+import { mobile } from "../responsive"
 
 const ProductVeiw = () => {
     return (
@@ -35,7 +36,7 @@ const ProductVeiw = () => {
                         </Filter>
 
                         <Filter>
-                            <FilterTitle>Color</FilterTitle>
+                            <FilterTitle>Size</FilterTitle>
                             <Select>
                                 <Option>300 X 400</Option>
                                 <Option>200 X 500</Option>
@@ -71,6 +72,7 @@ const Container = styled.div` `
 const Wrapper = styled.div` 
     padding: 50px;
     display: flex;
+    ${mobile({padding: "10px", flexDirection: "column"})}
 `
 // Info
 const ImageContainer = styled.div` 
@@ -80,10 +82,12 @@ const Img = styled.img`
     width: 100%;
     max-height: 80vh;
     object-fit: cover;
+    ${mobile({height: "40vh"})}
 `
 const InfoContainer = styled.div` 
     flex:1;
     padding: 0 50px;
+    ${mobile({padding: "10px"})}
 `
 const Title = styled.h1` 
     font-weight: 200;
@@ -102,6 +106,7 @@ const FilterContainer = styled.div`
     justify-content: space-between;
     width: 50%;
     margin: 30px 0 ;
+    ${mobile({width: "100%"})}
 `
 const Filter = styled.div` 
     display: flex;
@@ -118,6 +123,7 @@ const FilterColor = styled.div`
     border-radius: 50%;
     margin: 0 5px;
     cursor: pointer;
+    ${mobile({margin: "0 3px"})}
 `
 const Select = styled.select` 
     margin-left: 10px;
@@ -131,6 +137,7 @@ const AddContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    ${mobile({width: "100%"})}
 `
 const AmountContainer = styled.div`
     display: flex;
