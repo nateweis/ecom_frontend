@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import Pic from '../images/background_art1.jpg'
+import { mobile } from "../responsive"
 
 const Register = () => {
     return (
@@ -44,6 +45,7 @@ const Wrapper = styled.div`
     width:40% ;
     padding: 20px;
     background-color: white;
+    ${mobile({width: "75%"})}
 `
 const Title = styled.h1`
     font-size: 24px;
