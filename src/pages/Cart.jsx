@@ -5,6 +5,7 @@ import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
 
 import Pic from '../images/imgFiles'
+import { mobile } from "../responsive"
 
 const Cart = () => {
     return (
@@ -120,6 +121,7 @@ const Container = styled.div` `
 
 const Wrapper = styled.div`
     padding: 20px;
+    ${mobile({padding: "10px"})}
 `
 const Title = styled.h1`
     font-weight: 300;
@@ -141,7 +143,9 @@ const TopButton = styled.button`
     background-color: ${props => props.type === "filled" ? "black": "transparent"};
     color: ${props => props.type === "filled" && "white"};
 `
-const TopTextContainer = styled.div` `
+const TopTextContainer = styled.div`
+    ${mobile({display: "none"})}
+`
 
 const TopText = styled.span` 
     text-decoration: underline;
@@ -153,6 +157,7 @@ const TopText = styled.span`
 const Bottom = styled.div`
     display: flex;
     justify-content: space-between;
+    ${mobile({flexDirection: "column"})}
 `
 const Hr =styled.hr` 
     background-color: #eee;
@@ -168,6 +173,7 @@ const Info = styled.div`
 const ProductContainer = styled.div` 
     display: flex;
     justify-content: space-between;
+    ${mobile({flexDirection: "column"})}
 `
 const ProductDetails = styled.div` 
     flex: 2;
@@ -207,6 +213,7 @@ const PriceDetails = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    ${mobile({backgroundColor: "#fdfdfd"})}
 `
 const ProductAmountContainer = styled.div` 
     display: flex;
@@ -216,10 +223,12 @@ const ProductAmountContainer = styled.div`
 const ProductQuantity = styled.div` 
     font-size: 24px;
     margin: 5px;
+    ${mobile({margin: "10px 15px"})}
 `
 const ProductPrice = styled.div` 
     font-size: 30px;
     font-weight: 200;
+    ${mobile({marginBottom: "20px"})}
 `
 
 // Summary
